@@ -6,6 +6,7 @@ public class BoringDHCP {
         DHCPAddressPool.loadRange("192.168.1.1", "192.168.1.10");
         DHCPAddressPool.loadRange("10.0.0.1", "10.0.0.20");
         System.out.println("Initializing BoringDHCP v1.0 by Lorenzo Durastante\n");
+        System.out.println("OpenSource on Github <https://github.com/ammissione/boringdhcp>");
         DHCPAddressPool.showAvailableAddresses();
         DHCPManager.registerClient("admin");
         DHCPManager.assignIP("admin", DHCPManager.selectIP());
